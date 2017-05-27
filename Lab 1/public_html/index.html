@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Name: Maxim Kolb 
+Lab 1 - COMP3801 Winter 2017
+-->
+<html>
+  <head>
+    <title>Lab 1 - The Basics</title>
+    <link rel="icon" type="image/png" href="COMP3801 favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="Common/webgl-utils.js"></script>
+    <script type="text/javascript" src="ColorSquareEvent.js"></script>
+    <script type="text/javascript" src="BadButton.js"></script>
+  </head>
+  <body>
+    <div>
+      <input id="gl-canvas-red-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Red <span id="gl-canvas-red-value">0.5</span>
+    </div>
+    <div>
+      <input id="gl-canvas-blue-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Blue <span id="gl-canvas-blue-value">0.5</span>
+    </div>
+    <div>
+      <input id="gl-canvas-green-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Green <span id="gl-canvas-green-value">0.5</span>
+    </div>
+    <canvas id="gl-canvas" width="400" height="400">
+      This browser doesn't support the HTML5 canvas element
+    </canvas>
+    <div>
+      <button id="gl-canvas-reset-button">Reset</button>
+    </div>
+    <div>
+      <button id="bad-button">DON'T PRESS THIS BUTTON</button>
+    </div>
+    <script type="text/javascript">
+      var Bad = new BadButton();
+    </script>
+    <script type="text/javascript">
+      var square = new ColorSquareEvent("gl-canvas");
+    </script>
+  </body>
+</html>

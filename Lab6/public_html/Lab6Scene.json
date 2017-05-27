@@ -1,0 +1,61 @@
+{
+  "camera" : {
+    "location" : [ 0.0, 0.0, 11.0 ],
+    "lookAt" : [ 0.0, 0.0, 0.0 ],
+    "approxUp" : [ 0.0, 1.0, 0.0 ],
+    "FOVdeg" : 30.0,
+    "near" : 0.1,
+    "far" : 40.0,
+    "perspective" : true
+  },
+  "bgColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+  "models": [
+    {
+      "modelURL" : "Sphere2",
+      "location" : [ -2.5, 0.0, 0.0 ],
+      "scale" : [ 1.0, 1.0, 1.0 ],
+      "xBasis" : [ 1.0, 0.0, 0.0 ],
+      "yBasis" : [ 0.0, 1.0, 0.0 ],
+      "zBasis" : [ 0.0, 0.0, 1.0 ]
+    },
+    {
+      "modelURL" : "Sphere3",
+      "location" : [ 0.0, 0.0, 0.0 ],
+      "scale" : [ 1.0, 1.0, 1.0 ],
+      "xBasis" : [ 1.0, 0.0, 0.0 ],
+      "yBasis" : [ 0.0, 1.0, 0.0 ],
+      "zBasis" : [ 0.0, 0.0, 1.0 ]
+    },
+    {
+      "modelURL" : "Sphere4",
+      "location" : [ 2.5, 0.0, 0.0 ],
+      "scale" : [ 1.0, 1.0, 1.0 ],
+      "xBasis" : [ 1.0, 0.0, 0.0 ],
+      "yBasis" : [ 0.0, 1.0, 0.0 ],
+      "zBasis" : [ 0.0, 0.0, 1.0 ]
+    }
+  ],
+  "lights" : [
+    {
+      "comment" : "Ambient only (green)",
+      "location" : [ 1.0, 3.0, 4.0 ],
+      "diffuse" : [ 0.0, 0.0, 0.0 ],
+      "ambient" : [ 0.0, 0.2, 0.0 ],
+      "specular" : [ 0.0, 0.0, 0.0 ]
+    },
+    {
+      "comment" : "Diffuse only (red)",
+      "location" : [ 1.0, 3.0, 4.0 ],
+      "diffuse" : [ 0.8, 0.0, 0.0 ],
+      "ambient" : [ 0.0, 0.0, 0.0 ],
+      "specular" : [ 0.0, 0.0, 0.0 ]
+    },
+    {
+      "comment" : "Specular only (blue)",
+      "location" : [ 1.0, 3.0, 4.0 ],
+      "diffuse" : [ 0.0, 0.0, 0.0 ],
+      "ambient" : [ 0.0, 0.0, 0.0 ],
+      "specular" : [ 0.0, 0.0, 1.2 ]
+    }
+  ]
+}
